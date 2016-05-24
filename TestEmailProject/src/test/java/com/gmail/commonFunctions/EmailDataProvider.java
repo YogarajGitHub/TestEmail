@@ -14,7 +14,6 @@ public class EmailDataProvider {
 			objArr[i][0] = usernames[i];
 			objArr[i][1] = passwords[i];
 		}
-		//return new Object[][] {{"kaplan.interview.test1@gmail.com","Welcome@12"},{"kaplan.interview.test2@gmail.com","Welcome@12"}};
 		return objArr;
 	}
 }

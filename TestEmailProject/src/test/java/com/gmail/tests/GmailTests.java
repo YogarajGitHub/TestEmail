@@ -30,7 +30,7 @@ public class GmailTests {
 
 		LoginPage.getInstance(driver).login(username, password);
 		
-		InboxPage.getInstance(driver).searchEmail("Your recovery email address changed", "Hi Kaplan");
+		InboxPage.getInstance(driver).searchEmail(PropLoader.getInstance().getValue("input.emailSubject"), PropLoader.getInstance().getValue("input.emailContent"));
 		
 		InboxPage.getInstance(driver).logout();	
 	}
