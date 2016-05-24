@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9281" started-at="2016-05-24T12:05:01Z" finished-at="2016-05-24T12:05:10Z">
+  <suite name="test-parameter" duration-ms="47888" started-at="2016-05-24T21:30:02Z" finished-at="2016-05-24T21:30:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9281" started-at="2016-05-24T12:05:01Z" finished-at="2016-05-24T12:05:10Z">
-      <class name="com.kaplan.tests.GmailTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.kaplan.tests.GmailTests@4f933fd1]" name="setUp" is-config="true" duration-ms="5747" started-at="2016-05-24T08:05:01Z" finished-at="2016-05-24T08:05:06Z">
+    <test name="example1" duration-ms="47888" started-at="2016-05-24T21:30:02Z" finished-at="2016-05-24T21:30:49Z">
+      <class name="com.gmail.tests.GmailTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gmail.tests.GmailTests@120ebad]" name="setUp" is-config="true" duration-ms="2634" started-at="2016-05-24T17:30:02Z" finished-at="2016-05-24T17:30:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="emailSearchTest()[pri:0, instance:com.kaplan.tests.GmailTests@4f933fd1]" name="emailSearchTest" duration-ms="3513" started-at="2016-05-24T08:05:06Z" finished-at="2016-05-24T08:05:10Z">
+        <test-method status="PASS" signature="emailSearchTest(java.lang.String, java.lang.String)[pri:0, instance:com.gmail.tests.GmailTests@120ebad]" name="emailSearchTest" duration-ms="27508" started-at="2016-05-24T17:30:04Z" data-provider="dataProviderTest" finished-at="2016-05-24T17:30:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaplan.interview.test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Welcome@12]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailSearchTest -->
-      </class> <!-- com.kaplan.tests.GmailTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="emailSearchTest(java.lang.String, java.lang.String)[pri:0, instance:com.gmail.tests.GmailTests@120ebad]" name="emailSearchTest" duration-ms="16392" started-at="2016-05-24T17:30:32Z" data-provider="dataProviderTest" finished-at="2016-05-24T17:30:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaplan.interview.test2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Welcome@12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailSearchTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.gmail.tests.GmailTests@120ebad]" name="cleanUp" is-config="true" duration-ms="1319" started-at="2016-05-24T17:30:48Z" finished-at="2016-05-24T17:30:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.gmail.tests.GmailTests -->
+    </test> <!-- example1 -->
+  </suite> <!-- test-parameter -->
 </testng-results>
